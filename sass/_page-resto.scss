@@ -1,0 +1,704 @@
+// laboucherie-titre-map
+.laboucherie-titre-map {
+  margin-top: 2px;
+  overflow: hidden;
+  &, iframe {
+    @include full-width;
+    border: none;
+  }
+  iframe {
+    overflow: hidden;
+    height: 577px;
+    z-index: 5;
+  }
+}
+
+// titre-map-title
+.banner-title.titre-map-title {
+  margin-top: -170px;
+  @include tablet {
+    margin-top: -150px;
+  }
+  @include i-pad {
+    margin-top: -100px;
+  }
+  @include mobile-lg {
+    margin-top: -78px;
+  }
+  @include mobile-sm {
+    margin-top: -60px;
+  }
+  @include mobile-xs-349 {
+    margin-top: -50px;
+  }
+  // page-banner-title
+  .page-banner-title {
+    @include lgdesktop-min-992 {
+      padding: 16px 29px 9px;
+    }
+    @include i-pad {
+      font-size: 44px;
+    }
+    @include minmax-767 {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    @include mobile-lg {
+      font-size: 30px;
+    }
+    @include mobile-sm {
+      font-size: 24px;
+    }
+    @include mobile-xs-349 {
+      font-size: 18px;
+    }
+    // saint-des
+    &.saint-des {
+      margin-top: -8px;
+      @include mobile-lg {
+        margin-top: -14px;
+      }
+      @include lgdesktop-min-992 {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+// infos-itineraire
+.infos-itineraire {
+  @include full-width;
+  padding: 130px 35px 20px;
+  @include tablet {
+    padding: 60px 30px 20px;
+  }
+  @include i-pad {
+    padding: 40px 15px 20px;
+  }
+  // resto-form-btn
+  .resto-form-btn {
+    font-size: 0;
+    padding-top: 54px;
+    padding-bottom: 39px;
+  }
+  // map-input-box
+  .map-input-box {
+    @include full-width;
+    // right-content & trouver
+    .right-content, .deatil-text,
+    .description-block, .resto-form-btn, .trouver .detail {
+      margin: 0;
+      float: left;
+      width: 100%;
+    }
+    // deatil-text
+    .trouver {
+      margin: 0;
+      float: left;
+      width: 100%;
+      @include i-pad {
+        float: none;
+        width: 480px;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      .deatil-text {
+        height: auto;
+      }
+    }
+    // site-btn
+    .site-btn {
+      padding: 13px 18px;
+      font-size: 14.17px;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+    // right-content
+    .right-content {
+      text-align: left;
+      padding-top: 16px;
+      h2 {
+        letter-spacing: -0.2px;
+        margin-bottom: 21px;
+        @include mobile-sm{
+          line-height: 1.2;
+        }
+      }
+      h3 {
+        letter-spacing: 0.4px;
+        margin-bottom: 19px;
+      }
+      p {
+        text-transform: lowercase;
+        font-size: 14px;
+        @include i-pad {
+          margin: 10px 0;
+        }
+        a {
+          font-size: 14px;
+          letter-spacing: 1px;
+          @include mobile-sm{
+            font-size: 13px;
+          }
+        }
+        a.tele {
+          letter-spacing: 0.9px;
+          @include tabletlg{
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    // description-block
+    .description-block {
+      padding: 0 40px;
+      @include i-pad {
+        padding: 0 30px;
+      }
+      @include mobile-sm {
+        padding: 0 15px;
+      }
+      .restaurant-icon li img {
+        width: 38px;
+      }
+      .links {
+        margin-top: 52px;
+        @include tabletlg {
+          margin-top: 38px;
+        }
+        @include i-pad {
+          margin-top: 28px;
+        }
+        a {
+          font-size: 14px;
+          letter-spacing: -0.1px;
+        }
+      }
+      .restaurant-icon {
+        margin-top: -38px;
+        @include tabletlg {
+          margin-top: 10px;
+        }
+        @include i-pad {
+          margin-top: -38px;
+        }
+        @include mobile-md {
+          margin-top: 10px;
+        }
+      }
+    }
+    // detail
+    .trouver .detail {
+      .input-seach .search {
+        width: 51px;
+        font-size: 20px;
+        color: $white;
+        background: $black;
+        text-transform: uppercase;
+      }
+    }
+  }
+  // description-block
+  .description-block:nth-of-type(odd) {
+    background-color: transparent;
+  }
+  // reastaurant-thumb
+  .reastaurant-thumb {
+    margin-top: 21px;
+  }
+}
+
+// horaires-dou
+.horaires-dou {
+  h2 {
+    text-transform: uppercase;
+    color: $black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 17px;
+    letter-spacing: 0.2px;
+  }
+  p {
+    font-family: "Open Sans";
+    line-height: normal;
+    margin-bottom: 20px;
+    @include desktop-min-1025 {
+      width: 88%;
+    }
+    @include tablet {
+      margin-bottom: 10px;
+    }
+    @include i-pad {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// viande-et & horaires
+.viande-et, .horaires {
+  @include full-width;
+}
+
+// viande-et
+.viande-et {
+  padding-top: 16px;
+}
+
+// horaires
+.horaires {
+  ul {
+    width: 100%;
+    float: left;
+    li {
+      width: 25%;
+      float: left;
+      text-align: left;
+      margin-bottom: 7px;
+      @include tablet {
+        margin-bottom: 5px;
+      }
+      @include i-pad {
+        margin-bottom: 7px;
+      }
+      @include lg-desktopmin-1200 {
+        &:nth-child(4n+4) {
+          .horaires-deatil {
+            padding-right: 0;
+            background-image: none;
+          }
+        }
+      }
+      @include tablet {
+        width: 33.33%;
+        @include lgdesktop-min-992 {
+          &:nth-child(3n+3) {
+            .horaires-deatil {
+              padding-right: 0;
+              background-image: none;
+            }
+          }
+        }
+      }
+
+      @include minmax-767 {
+        &:nth-child(3n+3) {
+          .horaires-deatil {
+            padding-right: 0;
+            background-image: none;
+          }
+        }
+      }
+      @include minmax-480 {
+        &:nth-child(3n+3) {
+          .horaires-deatil {
+            padding-right: 0;
+            background-image: none;
+          }
+        }
+      }
+
+      @include mobile-sm {
+        width: 50%;
+        &:nth-child(2n+2) {
+          .horaires-deatil {
+            padding-right: 0;
+            background-image: none;
+          }
+        }
+      }
+
+      .horaires-deatil {
+        min-height: 72px;
+        background-image: url('#{$imageUrl}/right-border-resto.png');
+        background-repeat: no-repeat;
+        background-position: right 29px center;
+        padding-right: 40px;
+        @include tablet {
+          background-position: right 15px center;
+          padding-right: 20px;
+        }
+      }
+      h5, p {
+        font-family: "Open Sans";
+        font-size: 14px;
+      }
+      h5 {
+        color: $monza-red;
+        margin-bottom: 17px;
+      }
+      p {
+        width: 100%;
+        margin-bottom: -2px;
+      }
+    }
+  }
+}
+
+// pictos-services
+.pictos-services {
+  @include full-width;
+  margin-top: 20px;
+  padding: 0 40px 37px;
+  background: $monza-red;
+  color: $white;
+  @include i-pad {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include mobile-sm {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h2 {
+    margin-top: 24px;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 17px;
+    letter-spacing: 0.2px;
+    span {
+      font-size: 13px;
+      font-weight: 400;
+      position: relative;
+      top: 2px;
+    }
+    b {
+      font-weight: 600;
+      vertical-align: middle;
+    }
+  }
+  ul {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 31px;
+    @include tabletlg {
+      margin-bottom: 16px;
+    }
+    li {
+      float: left;
+      width: 11.11%;
+      text-align: center;
+      @include tabletlg {
+        width: 20%;
+        margin-bottom: 15px;
+      }
+      @include i-pad {
+        padding: 0 15px;
+        width: 25%;
+      }
+      @include mobile-lg {
+        width: 33.33%;
+      }
+      @include mobile-sm {
+        width: 50%;
+      }
+      // verticle-block
+      .verticle-block {
+        float: left;
+        height: 80px;
+        width: 100%;
+      }
+      // p
+      p, a {
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        font-size: 13.45px;
+        @include mobile-xs-349 {
+          font-size: 11.45px;
+        }
+      }
+      // a
+      a {
+        color: $white;
+        &:hover {
+          color: rgba(255, 255, 255, 0.70);
+        }
+      }
+    }
+  }
+}
+
+// main-heading semaine
+.main-heading.semaine {
+  background-color: #ececec;
+  margin-top: 15px;
+  padding-top: 29px;
+  padding-bottom: 27px;
+  margin-bottom: 0;
+}
+
+// plats-semaine
+.plats-semaine {
+  @include full-width;
+  // full-width-square
+  .dish-container .square-box.full-width-square {
+    min-height: auto;
+    padding-top: 0;
+    height: 430px;
+    @include mobile-sm {
+      height: auto;
+      padding-top: 100%;
+    }
+  }
+  // col-sm-4
+  .col-sm-4 {
+    @include mobile-lg {
+      width: 50%;
+    }
+  }
+  // dish-container
+  .dish-container {
+    margin-top: 5px;
+    .square-box {
+      padding-top: 90.51%;
+      text-transform: uppercase;
+      @include mobile-sm {
+        padding-top: 100%;
+      }
+      p {
+        letter-spacing: -0.9px;
+        text-transform: uppercase;
+      }
+      .verticle-block {
+        @include lgdesktop-min-992 {
+          padding: 29px 31px;
+        }
+      }
+    }
+  }
+}
+
+// ence-moment
+.ence-moment {
+  @include full-width;
+  // main-heading.semaine
+  .main-heading.semaine{
+    margin-top: 33px;
+    padding-bottom: 27px;
+  }
+  // ence-container
+  .ence-container {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 35px;
+    @include i-pad {
+      padding: 0 30px;
+    }
+    @include mobile-sm {
+      padding: 0 15px;
+    }
+  }
+  // side-ence-box
+  .side-ence-box {
+    color: $black;
+    text-align: center;
+    float: right;
+    width: 470px;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-transform: uppercase;
+    @include i-pad{
+      float: none;
+      max-width: 100%;
+      margin: 0 auto;
+      &:before, &:after {
+        content: " ";
+        display: table;
+      }
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 35px;
+      width: 100%;
+      float: left;
+      padding: 40px 15px;
+      line-height: 1.2;
+      color: $white;
+      background-color: $monza-red;
+      margin: 0;
+      @include i-pad{
+        padding: 36px 15px;
+        font-size: 30px;
+      }
+      @include mobile-lg{
+        padding: 30px 15px;
+        font-size: 26px;
+      }
+    }
+    // white-inner
+    .white-inner {
+      width: 100%;
+      float: left;
+      padding: 43px 15px 31px;
+      // p
+      p {
+        font-size: 16px;
+        line-height: 1.3;
+        @include mobile-sm{
+          font-size: 14px;
+          br{
+            display: none;
+          }
+        }
+      }
+      // h2
+      h2 {
+        font-size: 45px;
+        color: $monza-red;
+        font-weight: 600;
+        margin-top: 34px;
+        line-height: 1.3;
+        @include i-pad{
+          font-size: 40px;
+        }
+        @include mobile-lg{
+          font-size: 36px;
+        }
+        span {
+          font-weight: 400;
+          display: block;
+          font-size: 25px;
+          color: #959595;
+        }
+      }
+    }
+  }
+  // back-image
+  .owl-carousel .owl-item img.back-image,
+  .back-image {
+    display: none;
+  }
+  // owl-dots
+  .owl-dots{
+    bottom: 28px;
+    .owl-dot{
+      margin: 0 5.5px;
+    }
+  }
+
+}
+
+// bounceInDown
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+// bounceOutDown
+.bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+@keyframes bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}

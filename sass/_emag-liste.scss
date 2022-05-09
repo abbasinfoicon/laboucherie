@@ -1,0 +1,331 @@
+// banner-title
+.banner-title {
+  @include full-width;
+  z-index: 10;
+  margin-top: -49px;
+  @include tablet-1024 {
+    margin-top: -48px;
+    .small-heading {
+      font-size: 20px;
+      padding: 1px 8px 0;
+    }
+  }
+  @include mobile-lg {
+    margin-top: -55px;
+  }
+  // carte-plats
+  &.carte-plats{
+    margin-top: -68px;
+    @include i-pad{
+      margin-top: -42.5px;
+    }
+    .page-banner-title{
+      padding: 10px 17px 18px;
+      margin-bottom: 1px;
+    }
+  }
+  // small-heading
+  .small-heading {
+    @include mobile-sm {
+      position: relative;
+      top: 2px;
+    }
+  }
+  &.notre {
+    margin-top: -79px;
+    @include tablet-1024 {
+      margin-top: -59px;
+    }
+    @include mobile-lg {
+      margin-top: -82px;
+    }
+    @include mobile-sm {
+      margin-top: -56px;
+    }
+    .page-banner-title {
+      padding: 2px 10px 5px;
+      margin-bottom: 1px;
+      @include tablet-1024 {
+        padding: 0 10px 8px;
+        margin-bottom: 2px;
+      }
+      @include mobile-lg {
+        padding: 6px 11px 12px;
+      }
+    }
+  }
+}
+
+// page-banner-title & small-heading
+.page-banner-title, .small-heading {
+  background-color: $monza-red;
+  display: inline-block;
+  margin: 0;
+  color: $white;
+}
+
+// page-banner-title
+.page-banner-title {
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 80px;
+  padding: 2px 20px 9px;
+  line-height: 1;
+  @include tabletlg{
+    font-size: 70px;
+  }
+  @include tablet{
+    font-size: 60px;
+  }
+  @include tablet-1024 {
+    font-size: 56px;
+    padding: 7px 6px 13px;
+  }
+  @include mobile-lg {
+    font-size: 62px;
+    padding: 8px 11px 17px;
+  }
+  @include mobile-sm {
+    font-size: 44px;
+    padding: 7px 6px 13px;
+  }
+  @include mobile-xs-349{
+    font-size: 34px;
+  }
+}
+
+// emag-liste
+.emag-liste {
+  @include full-width;
+  padding-top: 68px;
+  @include tablet-1024 {
+    padding-top: 24px;
+  }
+  // dish-container
+  .nous-actus .overlay-hover .overlay-bottom {
+    padding: 16px 26px;
+    @include tablet-1024 {
+      padding: 7px 24px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      @include tablet-1024 {
+        margin-bottom: 7px;
+      }
+    }
+    p {
+      line-height: 1.2;
+      @include tablet-1024 {
+        line-height: 1.15;
+      }
+    }
+  }
+  // container
+  .container {
+    @include tablet-1024 {
+      float: left;
+      width: 100%;
+      padding: 0;
+    }
+    @include mobile-lg {
+      padding: 0 14px;
+    }
+  }
+  // nous-actus
+  .nous-actus {
+    background-color: transparent;
+    @include mobile-lg {
+      padding-top: 32px;
+    }
+    // overlay-bottom
+    .overlay-hover .overlay-bottom {
+      // tablet-1024
+      @include tablet-1024 {
+        padding: 10px 25px;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.2;
+        }
+      }
+      // mobile-lg
+      @include mobile-lg {
+        padding: 10px 20px;
+        h2 {
+          margin-bottom: 8px;
+        }
+      }
+      @include mobile-sm {
+        h2 {
+          font-size: 17px;
+          margin-bottom: 4px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  // square-box
+  .square-box {
+    @include mobile-sm {
+      @include emagliste-ratio;
+    }
+    &.half-view {
+      padding-top: 49.3%;
+      @include i-pad {
+        min-height: 400px;
+      }
+      @include mobile-lg {
+        padding-top: 0;
+        height: 344px;
+        min-height: auto;
+      }
+      @include mobile-sm {
+        @include emagliste-ratio;
+      }
+      .cell {
+        vertical-align: top;
+        @include i-pad {
+          vertical-align: middle;
+        }
+      }
+      // plus-icon
+      .plus-icon {
+        margin-top: 6%;
+        @include tablet {
+          margin-top: 0;
+        }
+        @include tablet-1024 {
+          margin-top: 30px;
+        }
+        @include i-pad {
+          margin-top: 0;
+        }
+        .cell {
+          vertical-align: middle;
+        }
+      }
+    }
+    &.full-rectangle {
+      padding-top: 27%;
+      min-height: 315px;
+      @include tablet {
+        padding-top: 0;
+        min-height: 320px;
+      }
+      @include tablet-1024 {
+        min-height: 279px;
+      }
+      @include i-pad {
+        padding-top: 100%;
+        min-height: 400px;
+      }
+      @include mobile-lg {
+        padding-top: 0;
+        height: 344px;
+        min-height: auto;
+      }
+      @include mobile-sm {
+        @include emagliste-ratio;
+      }
+    }
+  }
+  // dish-container dish-square
+  .dish-container .dish-square,
+  .dish-container .dish-square:last-child {
+    margin: 0;
+  }
+
+  .dish-container .dish-row {
+    margin: -4px;
+  }
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+  .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+  .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+  .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+  .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+  .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding: 4px;
+  }
+  // overlay-hover
+  .nous-actus .overlay-hover {
+    background: url('#{$imageUrl}/gradient-black-image.png') no-repeat top center;
+    background-size: cover;
+    @include mobile-500 {
+      .plus-icon {
+        margin-top: -128px;
+      }
+    }
+    // minmax-480
+    @include minmax-480 {
+      .plus-icon {
+        width: 120px;
+        height: 120px;
+        i {
+          &:after {
+            margin-left: -3px;
+          }
+          &:after, &:before {
+            height: 43px;
+            width: 3px;
+          }
+        }
+      }
+    }
+    // mobile-sm
+    @include mobile-sm {
+      .plus-icon {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// follow-social liste
+.follow-social {
+  &.liste {
+    .container-fluid {
+      padding: 29px 0 30px;
+    }
+  }
+}
+
+// liste container-fluid
+.follow-social.contact-follow.nos-socia.liste .container-fluid {
+  @include tablet-1024 {
+    padding: 19px 0 21px;
+  }
+  @include mobile-lg {
+    padding: 41px 0 43px;
+  }
+}
+
+// du-moment
+.du-moment {
+  @include tablet-1024 {
+    display: none;
+  }
+}
+
+// site-btn
+.supply-service.liste .site-btn {
+  @include tablet-1024 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+// half-view & full-rectangle class
+.emag-liste .square-box.half-view,
+.emag-liste .square-box.full-rectangle {
+  @include minmax-480 {
+    .plus-icon {
+      margin-top: -128px;
+    }
+  }
+}

@@ -1,0 +1,525 @@
+// access-favorites
+.access-favorites {
+  @include full-width;
+  margin-top: 3px;
+  padding: 112px 0 47px;
+  background-color: $monza-red;
+  text-transform: uppercase;
+  @include tablet-1024 {
+    padding: 36px 0 29px;
+  }
+  @include mobile-lg {
+    padding: 52px 0 41px;
+  }
+  // inner-block
+  .inner-block {
+    width: 844px;
+    margin: 0 auto;
+    @include tablet-1024 {
+      width: 555px;
+    }
+    @include i-pad {
+      width: 80%;
+    }
+    @include mobile-lg {
+      width: 100%;
+      padding: 0 31px;
+    }
+    @include mobile-sm{
+      padding: 0 15px;
+    }
+    @include mobile-xs-349{
+      padding: 0;
+    }
+  }
+  // search-container
+  .search-container {
+    @include full-width;
+    display: none;
+    margin-top: 11px;
+    @include tablet-1024 {
+      display: block;
+    }
+    @include mobile-lg {
+      margin-top: 10px;
+    }
+  }
+  // media-body
+  .media, .media-body {
+    overflow: visible;
+  }
+  // media
+  .media {
+    @include full-width;
+    margin-bottom: 39px;
+    @include tablet-1024 {
+      margin-bottom: 22px;
+    }
+    @include mobile-lg {
+      margin-bottom: 33px;
+    }
+  }
+  // media-right
+  .media-right {
+    padding-left: 13px;
+    @include mobile-lg {
+      padding-left: 9px;
+    }
+  }
+  // favoris-link
+  .favoris-link {
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    font-family: "Open Sans";
+    text-decoration: underline;
+    color: $white;
+    font-size: 16px;
+    // hover
+    &:hover {
+      color: rgba(255, 255, 255, 0.48);
+    }
+  }
+  // form-control & location-icon & search
+  .form-control, .location-icon, .search {
+    @include lg-desktopmin-1090 {
+      height: 64px;
+    }
+  }
+  // search
+  .search {
+    @include lg-desktopmin-1090 {
+      width: 64px;
+      background-position: top 17px center;
+      background-size: 27px;
+    }
+    z-index: 10;
+  }
+  // input-group
+  .input-group {
+    width: 100%;
+    // group-addon
+    .group-addon {
+      @include tablet-1024 {
+        width: 100%;
+        height: 54px;
+      }
+    }
+    // search-input
+    .search-input {
+      @include tablet-1024 {
+        display: none;
+      }
+    }
+  }
+  // input-group-addon
+  .input-group-addon {
+    cursor: pointer;
+    text-align: left;
+    background-color: $white;
+    color: $black;
+    font-weight: 600;
+    padding: 6px 19px;
+    text-transform: uppercase;
+    @include lg-desktopmin-1200 {
+      width: 147px;
+    }
+    @include tablet-1024 {
+      padding: 5px 29px 5px 13px
+    }
+    .material-icons {
+      color: $monza-red;
+      margin-left: -2px;
+      margin-right: 15px;
+      position: relative;
+      top: 6px;
+      font-size: 33px;
+      width: 0;
+      line-height: 0;
+      @include tablet-1024 {
+        top: 10px;
+        float: right;
+      }
+      @include i-pad {
+        vertical-align: middle;
+        top: 8px;
+        font-size: 26px;
+      }
+    }
+  }
+  // input-group-addon & form-control
+  .input-group-addon, .form-control {
+    @include border-radius(0);
+  }
+  // dropdown-menu
+  .dropdown-menu {
+    left: -1px;
+  }
+  .dropdown-menu > li > a {
+    font-family: "Open Sans";
+  }
+  // form-control & input-group-addon
+  .form-control, .input-group-addon {
+    @include box-shadow(none);
+    border-color: $white;
+    font-size: 25px;
+    @include tabletlg {
+      font-size: 23px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  // form-control
+  .form-control {
+    background-image: url('#{$imageUrl}/input-leftbg.jpg');
+    background-position: left top;
+    padding-left: 20px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-right: 73px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: $black;
+    @include tablet-1024 {
+      padding-left: 13px;
+    }
+    // input-placeholder
+    &::-webkit-input-placeholder {
+      color: #979797 !important;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #979797 !important;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #979797 !important;
+    }
+
+    &:-ms-input-placeholder {
+      color: #979797 !important;
+    }
+  }
+
+  // location-icon
+  .location-icon {
+    width: 64px;
+    float: right;
+    border: solid 3px $white;
+    line-height: 54px;
+    text-align: center;
+    padding-left: 3px;
+    @include lg-desktopmax-1089 {
+      padding-left: 0;
+      width: 54px;
+      line-height: 48px;
+      img {
+        width: 24px;
+        position: relative;
+        top: -2px;
+      }
+    }
+    @include mobile-lg {
+      width: 53px;
+      line-height: 47px;
+    }
+  }
+}
+
+// access-link
+.suggestion-block.access-link {
+  .nos-title {
+    padding: 0;
+    margin: 0;
+    margin-top: 2px;
+    min-height: 0;
+    background-image: none;
+    background: $white;
+  }
+}
+
+// resultats-block
+.resultats-block {
+  @include full-width;
+  background-color: $white;
+  padding-top: 128px;
+  overflow: hidden;
+  @include tablet-1024 {
+    padding-top: 58px;
+  }
+  @include mobile-lg {
+    padding-top: 55px;
+  }
+  // inner-left
+  .inner-left {
+    background-color: $white;
+    padding-right: 4px;
+    width: 53%;
+    float: left;
+    @include tablet-1024 {
+      width: 100%;
+      padding-right: 0;
+    }
+    // content
+    .content {
+      @include full-width;
+      background-color: #f7f7f7;
+    }
+  }
+  // inner-right
+  .inner-right {
+    width: 47%;
+    float: right;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    @include tablet-1024 {
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+    @include mobile-lg {
+      border-top: solid 3px $white;
+    }
+  }
+  // inner-map-content
+  .inner-map-content {
+    @include full-width;
+    h1 {
+      text-align: center;
+      color: $monza-red;
+      font-size: 26px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 43px 0 54px;
+      letter-spacing: -0.6px;
+      @include tablet-1024 {
+        font-size: 30.09px;
+        margin: 32px 0 33px;
+      }
+      @include mobile-lg {
+        font-size: 25.1px;
+        margin: 32px 0 39px;
+      }
+    }
+  }
+  // iframe.map-resultats
+  iframe.map-resultats {
+    border: 0;
+    width: 100%;
+    float: left;
+    height: 100%;
+    @include tablet-1024 {
+      height: 501px;
+    }
+    @include mobile-lg {
+      height: 500px;
+    }
+  }
+}
+
+// description-block
+.description-block {
+  @include full-width;
+  @include transition(all 0.4s ease);
+  padding-right: 73px;
+  padding-top: 1px;
+  padding-bottom: 44px;
+  @include tablet-1024 {
+    padding-right: 75px;
+    padding-bottom: 34px;
+  }
+  @include i-pad {
+    padding-right: 15px;
+  }
+  @include mobile-lg {
+    padding-bottom: 37px;
+  }
+  @include desktop-min-1025{
+    // nth-of-type odd
+    &:nth-of-type(odd) {
+      background-color: $white;
+    }
+  }
+  @include mobile-sm{
+    padding-bottom: 46px;
+  }
+  // tablet-1024
+  @include tablet-1024 {
+    &:nth-of-type(even) {
+      background-color: $white;
+    }
+  }
+  // on-active-img
+  .on-active-img {
+    display: none;
+  }
+  // default-img
+  .default-img {
+    display: inline;
+  }
+  // active
+  &.active {
+    background-color: $monza-red;
+    // on-active-img
+    .on-active-img {
+      display: inline;
+    }
+    // default-img
+    .default-img {
+      display: none;
+    }
+    // right-content
+    .right-content {
+      h2, h3, a {
+        color: $white;
+      }
+      .site-color {
+        color: $black;
+      }
+    }
+  }
+  // left-content
+  .left-content {
+    padding-top: 48px;
+    float: left;
+    width: 134px;
+    text-align: center;
+    @include tablet-1024 {
+      padding-top: 45px;
+      width: 161px;
+    }
+    @include i-pad {
+      width: 130px;
+    }
+    @include mobile-lg {
+      width: 120px;
+      padding-top: 40px;
+    }
+    @include mobile-sm{
+      width: 90px;
+    }
+    li {
+      margin-bottom: 13px;
+      @include tablet-1024 {
+        margin-bottom: 19px;
+      }
+    }
+  }
+  // links
+  .links {
+    a {
+      margin-bottom: 7px;
+      display: inline-block;
+      text-decoration: underline;
+    }
+  }
+  // right-content
+  .right-content {
+    padding-top: 35px;
+    text-transform: uppercase;
+    overflow: hidden;
+    @include mobile-lg {
+      padding-top: 29px;
+    }
+    h2 {
+      text-transform: uppercase;
+      color: $black;
+      font-family: Oswald;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      @include mobile-sm{
+        margin-top: 13px;
+      }
+      sup {
+        top: -7px;
+        font-size: 11px;
+      }
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    // site-color
+    .site-color {
+      color: $monza-red;
+      margin-left: 4px;
+    }
+    // a
+    a {
+      letter-spacing: -0.2px;
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-weight: 300;
+      color: $black;
+      @include mobile-sm{
+        font-size: 10px;
+      }
+      &:hover {
+        color: rgba(0, 0, 0, 0.56);
+      }
+    }
+  }
+
+  // links
+  .links {
+    padding-right: 205px;
+    @include tabletlg {
+      padding-right: 0;
+    }
+    @include tablet-1024 {
+      padding-right: 213px;
+    }
+    @include mobile-md {
+      padding-right: 0;
+    }
+  }
+
+  // restaurant-icon
+  .restaurant-icon {
+    font-size: 0;
+    float: right;
+    margin-top: -48px;
+    @include tabletlg {
+      margin-top: 10px;
+      float: left;
+    }
+    @include tablet-1024 {
+      margin-top: -60px;
+      float: right;
+    }
+    @include i-pad{
+      margin-top: -56px;
+    }
+    @include mobile-md {
+      margin-top: 10px;
+      float: left;
+    }
+    li {
+      font-size: 14px;
+      display: inline-block;
+      margin-left: 24px;
+      @include tablet-1024 {
+        margin-left: 28px;
+      }
+      @include mobile-sm{
+        margin-left: 15px;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      img {
+        @include border-radius(50px);
+        @include mobile-sm{
+          width: 40px;
+        }
+      }
+    }
+  }
+}

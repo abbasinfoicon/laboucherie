@@ -1,0 +1,136 @@
+// bootstrap
+@import "../vendor/stylesheets/bootstrap";
+// variable
+@import "variable";
+// Mixins
+@import "mixins";
+// font family
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/*img*/
+img{
+  max-width: 100%;
+  height:auto;
+}
+/*appearance none*/
+input, select, textarea, button{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  border: none;
+  &:focus{
+    outline: 0;
+  }
+}
+
+// form-control
+.form-control{
+  &:focus{
+    border-color: inherit;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(198, 5, 17, 0.3), 0 0 8px rgba(198, 5, 17, 0.3);
+    box-shadow: inset 0 1px 1px rgba(198, 5, 17, 0.3), 0 0 8px rgba(198, 5, 17, 0.3);
+  }
+}
+
+// default
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*a link*/
+a{
+  @include transition(all 0.4s ease);
+}
+a, a:focus, a:hover {
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*select*/
+select::-ms-expand{
+  display:none;
+}
+
+/*--- img-full ---*/
+.img-full,.container-fluid,.owl-carousel{
+  width: 100%;
+  float: left;
+}
+
+/*--- p ---*/
+p {
+  font-family: "Open Sans";
+}
+
+/*---- body-container ----*/
+.body-container{
+  overflow-x: hidden;
+  background-color: $white;
+  max-width: 100%;
+  width: 1440px;
+  margin: 0 auto;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+}
+// btn
+.btn{
+  white-space: normal;
+}
+/*container*/
+.container{
+  @include lg-desktopmin-1250{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*body*/
+body{
+  background-color: #ececec;
+  color: #000;
+  font-size: 14px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-kerning: none;
+}
+
+/*body, html*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+// import scss files
+// header
+@import "header";
+// home
+@import "home";
+// contact
+@import "contact";
+// trouver-un-resto
+@import "trouver-un-resto";
+// emag-article
+@import "emag-article";
+// emag-liste
+@import "emag-liste";
+// laboucherie-edito
+@import "laboucherie-edito";
+// laboucherie-carte
+@import "laboucherie-carte";
+// page-resto
+@import "page-resto";
+// footer
+@import "footer";
